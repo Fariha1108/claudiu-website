@@ -1,0 +1,110 @@
+*
+{
+  font-family: 'Open Sans', sans-serif;
+}
+.homePic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  background-image: url('/public/home.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.homeBtn .btn{
+  text-align: center; 
+  padding: 20px; 
+  border-radius: 5px; 
+  margin-top: 350px;
+  background-color: white;
+  color: #0B0F59;
+  font-weight: bold;
+  font-size: 25px;
+}
+.sentence {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  width: 100vw;
+  padding: 5rem 20px;
+  background-color: #BFBFBF;
+}
+.sentence h2, .sentence p {
+  color: #0B0F59;
+  text-align: center;
+}
+.sentence h2{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.firstPage
+{
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 7rem 2.5rem 7rem 2.5rem;
+  border-radius: 10px;
+}
+.webdev {
+  text-align: center;
+}
+.titleHome
+{
+  color: #0B0F59;
+  margin: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.textWebdev , .sentence p {
+  font-size: 18px;
+  color: #0B0F59
+}
+.telBtn .btn {
+  padding: 20px; 
+  border-radius: 5px; 
+  margin: 100px 0px;
+  background-color: #0B0F59;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media (min-width : 768px) {
+  .homeBtn .btn{
+    margin-left: -200px;
+  }
+}
+
+
+@media (min-width : 1024px) 
+{
+  .homeBtn .btn{
+    margin-left: -500px;
+  }
+  .homePic {
+    height: 80vh;
+  }
+  .sentence h2{
+    font-size: 3rem;
+  }
+  .textWebdev, .sentence p {
+    font-size: 24px;
+  }
+  .firstPage
+  {
+    padding: 8rem 0 8rem 0;
+  }
+  .firstPage
+  {
+    display: flex;
+    align-items: center; 
+  }
+  .titleHome
+  {
+    font-size: 3rem;
+  }
+  .webdev
+  {
+    width: 50%;
+    padding-right: 10rem;
+  }
+}

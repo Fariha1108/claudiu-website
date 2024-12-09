@@ -1,0 +1,34 @@
+.pictureAbout
+{
+  margin: 4rem -0.8rem;
+  color: black;
+  background: white;
+  box-shadow:
+        inset 0 -10px 10px rgba(0, 0, 0, 0.2),
+        0 0 0 5px white,
+        10px 10px 20px black;
+} 
+.pictureAbout
+{
+  width: auto;
+  height: 40rem;
+  border-radius: 10px;
+  background: url('/public/am_laptop.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+@media (min-width : 768px) 
+{
+  .pictureAbout
+  {
+    margin: 4rem auto;
+    width: 25rem;
+  }
+}
+
+@media (min-width : 1024px)
+{
+  
+}

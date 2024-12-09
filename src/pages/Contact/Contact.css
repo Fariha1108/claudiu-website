@@ -1,0 +1,169 @@
+*
+{
+  font-family: 'Open Sans', sans-serif;
+}
+.letsMeet, .formPage
+{
+  width: 100%;
+  padding: 5rem 2.5rem;
+}
+.letsMeet
+{
+  background-color: #fdf2ff;
+  background-image: url("/public/design.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.boxContact
+{
+  width: auto;
+  height: auto;
+  padding: 2.5rem;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+}
+.titleContact
+{
+  color: white;
+  margin-bottom: 2.2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.textContact, .callToAction
+{
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  color: #DCE6F2;
+}
+.callToAction, .motivation
+{
+  font-size: 1.9rem;
+  text-align: center;
+}
+.motivation
+{
+  color: #0B0F59;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.formPage
+{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.animatedDesign
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animatedDesign img
+{
+  width: 25rem;
+  height: 25rem;
+  padding-bottom: 2.5rem;
+}
+.form-control
+{
+  height: 3rem;
+}
+.modal-body, .modal-footer
+{
+  background-color: #fdf2ff;
+}
+.modalContact
+{
+  margin: 4rem auto;
+  color: black;
+  background: white;
+  box-shadow:
+        inset 0 -10px 10px rgba(0, 0, 0, 0.2),
+        0 0 0 5px white,
+        10px 10px 20px black;
+}
+.modal-footer .btn
+{
+  width: 100%;
+  background-color: #0B0F59;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+}
+.modal-footer .btn:hover
+{
+  background-color: #0D088C;
+}
+.myEmail, .emailAdress
+{
+  font-size: 1.5rem;
+  color: #200972;
+  text-align: center;
+}
+.myEmail
+{
+  padding-top: 7rem;
+}
+.emailAdress
+{
+  font-size: 1.2rem;
+  padding-bottom: 10rem;
+}
+
+@media (min-width : 1024px) 
+{
+  .letsMeet
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .boxContact
+  {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleContact
+  {
+    font-size: 4rem;
+  }
+  .textContact
+  {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .callToAction
+  {
+    font-size: 2rem;
+  }
+  .formPage
+  {
+    flex-direction: row;
+  }
+  .animatedDesign, .form
+  {
+    flex-grow: 1;
+  }
+  .animatedDesign img
+  {
+    width: 35rem;
+    height: 35rem;
+    margin-top: 5rem;
+  }
+  .motivation
+  {
+    font-size: 3.8rem;
+    margin-top: 5rem;
+  }
+  .form-control
+  {
+    height: 3.8rem;
+  }
+}

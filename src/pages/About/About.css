@@ -1,0 +1,65 @@
+*
+{
+  font-family: 'Open Sans', sans-serif;
+}
+.boxAbout, .aboutMe
+{ width: 100%;
+  padding: 7.5rem 2.5rem;
+  background-color: #BFBFBF;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.aboutMe
+{
+  background-color: white;
+  border-radius: none;
+  padding: 0 2.5rem 4rem;
+}
+.titleAbout
+{
+  color: #0B0F59;
+  margin: 2.2rem 0rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.textAbout {
+  font-size: 18px;
+  color: #0B0F59
+}
+.skills
+{
+  padding: 2.5rem;
+}
+.skillstwo
+{
+  padding: 0rem 2.5rem 2.5rem;
+}
+
+@media (min-width : 1024px) 
+{
+  .titleAbout
+  {
+    font-size: 3rem;
+  }
+  .textAbout {
+    font-size: 24px;
+  }
+  .aboutMe
+  {
+    display: flex;
+    align-items: center;
+  }
+  .aboutMeBox
+  {
+    width: 50%;
+    padding-right: 10rem;
+  }
+  .skills {
+    padding: 5rem 10rem;
+  }
+  .skillstwo
+  {
+    padding: 0rem 9.5rem;
+  }
+}

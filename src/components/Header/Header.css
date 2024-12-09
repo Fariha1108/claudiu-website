@@ -1,0 +1,90 @@
+.navbar
+{
+  width: 100%;
+}
+.navbar-light
+.navbar-nav
+.nav-link
+{
+  color: #0B0F59;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+.navbar-light
+.navbar-nav
+.nav-link:hover
+{
+  color: #140DD9;
+  font-weight: bold;
+}
+.logo 
+{
+  width: 6rem;
+  height: 6rem;
+  background: url('/public/CO.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 2.7rem;
+}
+.contactBtn .btn 
+{
+  background-color: #0B0F59;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  padding: 0;
+}
+.contactBtn .btn:hover
+{
+  background-color: #140DD9;
+}
+.contactBtn .btn .nav-link
+{
+  color: white;
+}
+
+@media (min-width : 768px) 
+{
+  .contactBtn .btn 
+  {
+    padding: 6px 12px;
+  }
+}
+
+@media (min-width : 1024px) 
+{
+  .navbar
+  {
+    height: 15vh;
+  }
+  .navbar-light
+  .navbar-nav
+  .nav-link:focus
+  {
+    text-decoration: underline;
+    color: #1E0D8C;
+  }
+  .navbar-collapse
+  {
+     flex-grow: 0;
+  }
+  .navbar
+  .me-auto
+  {
+    display: flex !important;
+    gap: 2rem;
+  }
+  .logo
+  {
+    width: 7.7rem;
+    height: 7.7rem;
+    margin-right: 80px;
+  }
+  .contactBtn .btn .nav-link
+  {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,82 @@
+.pictureHomeBack, .pictureHome, .pictureHomeTwo
+{
+  margin: 4rem auto;
+  color: black;
+  background: white;
+  box-shadow:
+        inset 0 -10px 10px rgba(0, 0, 0, 0.2),
+        0 0 0 5px white,
+        10px 10px 20px black;
+} 
+.pictureHomeBack, .pictureHome
+{
+  width: 23rem;
+  height: 40rem;
+  border-radius: 10px;
+  background: url('/public/claudiu_bild.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.pictureHomeBack
+{
+  position: absolute;
+  margin-left: 5rem;
+  margin-top: 20px;
+  opacity: 0.4;
+  display: none;
+}
+.pictureHome
+{
+  margin-left: -0.8rem;
+  position: relative;
+  z-index: 1;
+}
+.pictureHomeTwo
+{
+  width: 23rem;
+  height: 23rem;
+  margin: 2rem 0 7rem -0.8rem;
+  border-radius: 50%;
+  background: url('/public/portfolio-img.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width : 768px) 
+{
+  .pictureHomeBack
+  {
+    display: block;
+    margin-left: 100px;
+  }
+  .pictureHome
+  {
+    top: 60px;
+    left: 13rem;
+    margin-bottom: 8rem;
+  }
+  .pictureHomeTwo
+  {
+    margin: 3rem auto;
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width : 1024px) 
+{
+  .pictureHome
+  {
+    width: 25%;
+    order: -1;
+    left: 210px;
+    top: 90px;
+  }
+  .pictureHomeTwo
+  {
+    order: 1;
+    width: 32rem;
+    height: 32rem;
+  }
+}

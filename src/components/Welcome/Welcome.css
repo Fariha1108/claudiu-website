@@ -1,0 +1,79 @@
+* 
+{
+        font-family: 'Open Sans', sans-serif;
+}
+
+.welcome {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url('/public/welcome.jpg');
+        background-position: 80% top;
+        background-repeat: no-repeat;
+        background-color: #BFBFBF;;
+}
+
+.contentWelcome {
+        text-align: center; 
+        backdrop-filter: blur(15px);
+        padding: 20px; 
+        border-radius: 5px; 
+        margin-top: 250px;
+}
+
+.name, 
+.profession {
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+}
+
+.profession {
+        font-size: 1.3rem;
+}
+
+.contentWelcome .btn {
+        background-color: #BFBFBF;
+        color: #0B0F59;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 10px 50px;
+}
+
+.contentWelcome .btn:hover {
+        background-color: #0B0F59;
+        color: #BFBFBF;
+}
+
+@media (min-width : 768px) {
+        .name {
+                font-size: 3rem;
+        }
+        .profession, .contentWelcome .btn {
+                font-size: 1.5rem;
+        }
+        .contentWelcome {
+                margin-left: -260px;
+        }
+}
+
+@media (min-width : 1024px) {
+        .welcome {
+                background-size: cover;
+        }
+        .name {
+                font-size: 3rem;
+        }
+        .profession, .contentWelcome .btn {
+                font-size: 1.5rem;
+        }
+        .contentWelcome {
+                font-size: 3rem;
+                margin-top: 450px; 
+                margin-left: -700px; 
+        }       
+}
