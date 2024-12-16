@@ -24,7 +24,7 @@ app.post('/send-message', (req, res) => {
     // Erstellen der Nachricht
     const mailOptions = {
         from: email,
-        to: 'receiver-email@example.com', // Ziel-E-Mail-Adresse
+        to: 'fariha_1990@outlook.de', // Ziel-E-Mail-Adresse
         subject: topic,
         text: `Nachricht von ${firstName} ${lastName}\nEmail: ${email}\nNachricht: ${message}`
     };
