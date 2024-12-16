@@ -155,7 +155,7 @@ const Footer = () => {
             </div>
             <div className='linkFooter'>
                 <Navbar expand="lg" variant="dark">
-                    <Navbar.Brand>&copy;ClaudiuOla</Navbar.Brand>
+                    <Navbar.Brand>&copy;ClaudiuOlaru</Navbar.Brand>
                     <Navbar.Text>
                         <div className='links'>
                             <a href="https://www.linkedin.com/in/claudiu-olaru-581a58282/"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
