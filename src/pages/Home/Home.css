@@ -21,6 +21,9 @@
   font-weight: bold;
   font-size: 25px;
 }
+.btn-primary {
+  border-color: none;
+}
 .sentence {
   margin-top: 10rem;
   margin-bottom: 10rem;

@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Nodemailer Transport konfigurieren
+// Nodemailer Transport konfigurierengit
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -40,9 +40,9 @@ app.post('/send-message', (req, res, next) => {
 
     // Erstellen der Nachricht
     const mailOptions = {
-        from: 'your-email@example.com', // Eigene E-Mail-Adresse
-        replyTo: email,                 // Benutzer-E-Mail für Antworten
-        to: 'fariha_1990@outlook.de',   // Ziel-E-Mail-Adresse
+        from: email,                     // Die E-Mail-Adresse des Senders (Benutzer-E-Mail)
+        replyTo: email,                  // Benutzer-E-Mail für Antworten
+        to: 'fariha_1990@outlook.de',    // Ziel-E-Mail-Adresse (E-Mail-Adresse, an die die Nachricht gesendet wird)
         subject: topic,
         text: `Nachricht von ${firstName} ${lastName}\nEmail: ${email}\nNachricht: ${message}`
     };
