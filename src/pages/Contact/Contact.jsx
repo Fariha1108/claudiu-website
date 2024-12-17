@@ -93,7 +93,7 @@ const Contact = () =>
             return true
     }
 
-    fetch('/send-message', {
+    fetch('https://it-solution-claudiuolaru.de/send-message', { // Vollständige Backend-URL
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -106,15 +106,21 @@ const Contact = () =>
             message: message
         })
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         console.log('Erfolgreich:', data);
-        // Feedback an den Benutzer, z. B. mit swal
+        // Feedback an den Benutzer, z. B. mit Swal oder einer Benachrichtigung
     })
     .catch(error => {
-        console.error('Error:', error);
-        // Feedback an den Benutzer, z. B. mit swal
+        console.error('Fehler beim Senden der Nachricht:', error);
+        // Feedback für Fehler an den Benutzer anzeigen
     });
+    
     
 
     return (

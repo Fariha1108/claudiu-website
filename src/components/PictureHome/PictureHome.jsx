@@ -4,8 +4,8 @@ import './PictureHome.css';
 const PictureHome = () => {
   return (
     <>
-      <div class="pictureHomeBack" />
-      <div class="pictureHome" />
+      <div className="pictureHomeBack" />
+      <div className="pictureHome" />
     </>
     
   )
